@@ -17,10 +17,7 @@ if ($con->connect_error){
 $con = mysqli_connect("127.0.0.1","root","","Form");
 if(mysqli_connect_error()){
     exit("an Error Occured".mysqli_connect_error());
-}else{
-    echo "connection succefull etablished";
-} 
-
+}
 if(!isset($_POST['username'],$_POST['email'],$_POST['Passwort'])){
     exit ('Empty Field(s)');
 }
